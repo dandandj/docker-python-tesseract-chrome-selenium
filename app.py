@@ -17,7 +17,7 @@ def test():
     print("开始启动浏览器")
     options = webdriver.ChromeOptions()
     # options设置chrome位置
-    options.binary_location = '/usr/local/chromedriver/'
+    options.binary_location = '/usr/local/chromedriver/chromedriver'
     # 配置到实例
     browser = webdriver.Chrome(chrome_options=options)
     cc = browser.get("http://www.baidu.com")
