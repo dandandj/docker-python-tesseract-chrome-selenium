@@ -30,7 +30,7 @@ RUN mkdir -p /usr/local/chromedriver/
 ##  为什么最后要带上 || true  
 ## 猜想是 这个run没有返回任何参数，所以docker执行后会抛出 The command '/bin/sh -c wget -p http://unzip.com && unzip chromedriver_linux64.zip' returned a non-zero code: 1
 
-RUN wget -p -O /usr/local/chromedriver_linux64.zip http://npm.taobao.org/mirrors/chromedriver/85.0.4183.38/chromedriver_linux64.zip && cd /usr/local/ && unzip -y chromedriver_linux64.zip || true;
+RUN wget -p -O /usr/local/chromedriver_linux64.zip http://npm.taobao.org/mirrors/chromedriver/85.0.4183.38/chromedriver_linux64.zip && cd /usr/local/ && unzip chromedriver_linux64.zip || true;
 
 
 RUN pip3 install -r requirements.txt
