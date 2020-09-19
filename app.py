@@ -16,13 +16,14 @@ def hello_world():
 def test():
     print("开始启动浏览器")
     options = webdriver.ChromeOptions()
-    # options设置chrome位置
-    options.binary_location = '/usr/local/chromedriver/chromedriver'
-    # 配置到实例
-    browser = webdriver.Chrome(chrome_options=options)
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    # 配置到实例 chromedriver路径不能写在options里面，否则会找不到
+    browser = webdriver.Chrome('/opt/google/chrome/chromedriver',chrome_options=options)
     cc = browser.get("http://www.baidu.com")
     #text = pytesseract.image_to_string('./123.png')
-    return text
+    return '1234'
 
 
 
