@@ -25,3 +25,7 @@ copy 下好的字体到ocr文件夹下，不然识别的时候会报找不到字
 #### 需要注意的是这里，由于时间关系，最新版本可能会变动，所以需要自行替换下 chromedriver zip url地址
 RUN yum install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 http://npm.taobao.org/mirrors/chromedriver/85.0.4183.38/chromedriver_linux64.zip
+
+
+# DOWNLOAD 
+链接: https://pan.baidu.com/s/1zp0ZjN9KmE_GrLUPV9z6PQ 提取码: xj19
