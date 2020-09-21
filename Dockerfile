@@ -22,8 +22,10 @@ RUN mkdir -p /usr/local/share/tesseract-ocr/tessdata \
 
 #&& wget --no-check-certificate https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata \
 #&& wget --no-check-certificate https://github.com/tesseract-ocr/tessdata/raw/master/chi_sim.traineddata \
-#&& gzip -d chi_sim.traineddata.gz && gzip -d eng.traineddata.gz \
 #&& sudo mv eng.traineddata chi_sim.traineddata /usr/local/share/tesseract-ocr/tessdata/
+
+#remove
+#&& gzip -d chi_sim.traineddata.gz && gzip -d eng.traineddata.gz \
 
 ### 通过sed命令禁用掉yum加速源
 #RUN sed -i 's/enabled=1/enabled=0/g' /etc/yum/pluginconf.d/fastestmirror.conf
