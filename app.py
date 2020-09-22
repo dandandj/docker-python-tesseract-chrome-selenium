@@ -18,6 +18,7 @@ def test():
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
+    options.binary_location='/opt/google/chrome/google-chrome'
     options.add_argument('--disable-dev-shm-usage')
     # 配置到实例 chromedriver路径不能写在options里面，否则会找不到
     browser = webdriver.Chrome('/opt/google/chrome/chromedriver',chrome_options=options)
