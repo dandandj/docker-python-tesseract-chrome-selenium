@@ -4,9 +4,9 @@ MAINTAINER jhao104 "my"
 
 COPY ./requirements.txt /requirements.txt
 COPY ./123.png /123.png
-RUN mkdir -p /usr/local/share/tesseract-ocr/tessdata
-COPY ./eng.traineddata /usr/local/share/tesseract-ocr/tessdata/eng.traineddata
-COPY ./chi_sim.traineddata /usr/local/share/tesseract-ocr/tessdata/chi_sim.traineddata
+RUN mkdir -p /usr/local/share/tesseract/tessdata
+COPY ./eng.traineddata /usr/local/share/tesseract/tessdata/eng.traineddata
+COPY ./chi_sim.traineddata /usr/local/share/tesseract/tessdata/chi_sim.traineddata
 #复制字体文件
 #COPY ./eng.traineddata /usr/local/share/tesseract-ocr/tessdata/eng.traineddata
 #COPY ./chi_sim.traineddata /usr/local/share/tesseract-ocr/tessdata/chi_sim.traineddata
